@@ -1,10 +1,11 @@
 ## Emoji And Keyword Spider Demo
 
-Ok,I just want to create a json file which was filled with emoji data.
+Ok,I just want to save all emoji data in sqlite db.
 
-## emoji_data.json
+## emoji.db
 
-This file is a json file.The key is emoji,and the value is keyword!
+sqlite file include two columns: value and keyword.
+I save emoji as value, description string as keyword.
 
 ## required
 Base on python v3 and you need install `requests-html` with pip3.

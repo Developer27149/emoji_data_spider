@@ -9,7 +9,6 @@ def getDataAndSaveToFile():
   res = session.get("https://www.emojiall.com/zh-hans/all-emojis")
   emojiList = res.html.find('.emoji_card .emoji_font')
   keywordList = res.html.find('.emoji_card .emoji_name')
-
   for emoji,keyword in zip(emojiList, keywordList):
     key = emoji.text.strip()
     value = keyword.text.strip()
